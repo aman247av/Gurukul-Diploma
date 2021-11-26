@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/book"
+        android:icon="@drawable/book_m"
+        android:title="BOOK"/>
+
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/video_m"
+        android:title="VIDEO"/>
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/note_m"
+        android:title="NOTES"/>
+</menu>

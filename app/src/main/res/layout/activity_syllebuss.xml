@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".syllebuss">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:id="@+id/btn1"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:background="@drawable/notesbtn"
+        android:paddingLeft="20dp"
+        android:text="Mechanical Engg."
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:id="@+id/btn2"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:background="@drawable/notesbtn"
+        android:paddingLeft="20dp"
+        android:text="Electrical Engg."
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:id="@+id/btn3"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:background="@drawable/notesbtn"
+        android:paddingLeft="20dp"
+        android:text="Civil Engg."
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+
+</LinearLayout>

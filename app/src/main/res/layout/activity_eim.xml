@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eim"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="intro to electrical instruments"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="36dp"
+                android:text="measurements and errors"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="36dp"
+                android:text="essentials of indicating instru"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="ammeters and voltmeters"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="extension of instrument range"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="wattmerters"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="measurement of electric power"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="energy meter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="maximum demand indication"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="ohm meter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="frequency meter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="power factor meter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="synchroscope"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="phase sequence indicator"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn15"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="tachometer"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn16"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="quality measurement of coil"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn17"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="instrument transformers"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn18"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="lcr meter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn19"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="signal generator"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn20"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="multimeter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="cathode ray oscilloscope"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn22"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="measurement of resistance"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn23"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="measurement of inductance &amp; capacitance"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn24"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="continuity and differentiability"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn25"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="trivector meter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn26"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="digital instruments"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn27"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="clamp on meter"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn28"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="smart metering system"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn29"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="practical"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center_horizontal"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ad_unit_id"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

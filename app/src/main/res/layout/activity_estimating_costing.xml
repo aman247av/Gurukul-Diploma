@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".estimating_costing"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingStart="40sp"
+                android:text="basic principle and procedure of estimating"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="36dp"
+                android:text="estimates of simple objects"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="36dp"
+                android:text="buildings"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="r.c.c structures"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="timber and steel structures"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="water supply and sanitary fittings"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="earth works in roads,canals,dams and pavements"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="bridges and canal works"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="miscellaneous civil constructions"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="electrification of buildings"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn11"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="constructions specifications"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="analysis of rates"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="building planning,by-laws,contracts and arbitration"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="valuation and rent fixation"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn15"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="technical data and estimating tables"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

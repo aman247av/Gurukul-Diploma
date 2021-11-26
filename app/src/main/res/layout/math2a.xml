@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Math2aActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingStart="40sp"
+                android:text="matrices"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="36dp"
+                android:text="elementry row colm transformation"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="36dp"
+                android:text="eigen and cayley hamilton therorem"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="diff equation of first order"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="linear diff equation of higher order"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="simple app of diff equation"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="fun of two and three varibales"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="partial diffrentiation"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="jacobians"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="diffrentiations of vectors"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn11"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="gardient divergence and curl"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="integration of vectors"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="line surface and volume integrals"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn14"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="green gauss's and stokes theroem"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn15"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="laplace transformation"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn16"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="inverse laplace transformation"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn17"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="beta and gama functions"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn18"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="fourier transforma and series"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn19"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="probility"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn20"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="binomial normal and poisson distri"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="40sp"
+                android:text="methof least sqaures and curve fitting"
+                android:fontFamily="@font/choco"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                app:backgroundTint="#D6D6D6"
+                style="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
