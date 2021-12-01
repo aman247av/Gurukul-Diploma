@@ -1,5 +1,6 @@
 package com.gap.mobigpk1;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -15,6 +16,7 @@ import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -54,6 +56,7 @@ public class notes extends Fragment {
     RecyclerView.LayoutManager manager;
     FirebaseDatabase database;
     DatabaseReference reference;
+    Dialog progressDialog;
 
     public notes() {
         // Required empty public constructor
@@ -99,12 +102,26 @@ public class notes extends Fragment {
         nointernet = v.findViewById(R.id.nointernt);
 
 
-
         if(!isConnected())
         {
-            nointernet.setVisibility(View.VISIBLE);
-            Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_LONG).show();
+            progressDialog=new Dialog(getActivity());
+            progressDialog.setContentView(R.layout.dialog_layout);
+            progressDialog.setCancelable(false);
+            Button btn=progressDialog.findViewById(R.id.retry);
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(isConnected())
+                        progressDialog.dismiss();
+                    else
+                        Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_SHORT).show();
+                }
+            });
+            progressDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+            progressDialog.show();
+            //    Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_LONG).show();
         }
+
 
         long duration= TimeUnit.SECONDS.toMillis(2);
         new CountDownTimer(duration, 1000) {

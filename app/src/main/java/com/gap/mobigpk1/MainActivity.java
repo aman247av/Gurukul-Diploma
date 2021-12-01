@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
@@ -19,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -39,6 +41,7 @@ import com.google.android.play.core.tasks.Task;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -46,11 +49,19 @@ public class MainActivity extends AppCompatActivity {
 
     Fragment fragment=new book();
     private  int REQUEST_CODE=11;
+    public Dialog progressDialog;
+     Button btn;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater=getMenuInflater();
         inflater.inflate(R.menu.hamburger,menu);
         return true;
+    }
+    private boolean isConnected()
+    {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
     @Override
@@ -82,6 +93,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(!isConnected())
+        {
+            progressDialog=new Dialog(MainActivity.this);
+            progressDialog.setContentView(R.layout.dialog_layout);
+            progressDialog.setCancelable(false);
+            btn=progressDialog.findViewById(R.id.retry);
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(isConnected())
+                        progressDialog.dismiss();
+                    else
+                        Toast.makeText(MainActivity.this,"No Internet Access",Toast.LENGTH_SHORT).show();
+                }
+            });
+            progressDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+            progressDialog.show();
+        //    Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_LONG).show();
+        }
 
 
         AppUpdateManager appUpdateManager= AppUpdateManagerFactory.create(MainActivity.this);

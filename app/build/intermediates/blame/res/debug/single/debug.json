@@ -4,12 +4,12 @@
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\gpk3.jpg"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_blank.xml.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\fragment_blank.xml"
-    },
-    {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_circuit.png.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\circuit.png"
+    },
+    {
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_blank.xml.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\fragment_blank.xml"
     },
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_concrete_tech.xml.flat",
@@ -20,12 +20,12 @@
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_industrial_engg.xml"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_prototype.png.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\prototype.png"
-    },
-    {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_eeem.xml.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_eeem.xml"
+    },
+    {
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_prototype.png.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\prototype.png"
     },
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -72,28 +72,28 @@
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\technology.png"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_electrical_machine1.xml.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_electrical_machine1.xml"
-    },
-    {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_general_engineering.xml.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\general_engineering.xml"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tile3.png.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\tile3.png"
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_electrical_machine1.xml.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_electrical_machine1.xml"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_lim.png.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\lim.png"
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_production.png.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\production.png"
     },
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gpk2.jpg.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\gpk2.jpg"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_production.png.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\production.png"
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_lim.png.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\lim.png"
+    },
+    {
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tile3.png.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\tile3.png"
     },
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_distributed.png.flat",
@@ -132,24 +132,24 @@
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\electricmeter.png"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bground.png.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\bground.png"
-    },
-    {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_syllebuss.xml.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_syllebuss.xml"
+    },
+    {
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bground.png.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\bground.png"
     },
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_soil.png.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\soil.png"
     },
     {
-        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rbt.xml.flat",
-        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_rbt.xml"
-    },
-    {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_www_engg.xml.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_www_engg.xml"
+    },
+    {
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rbt.xml.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\activity_rbt.xml"
     },
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_mos.xml.flat",
@@ -294,6 +294,10 @@
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bg2.jpg.flat",
         "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\drawable-v24\\bg2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_layout.xml.flat",
+        "source": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\src\\main\\res\\layout\\dialog_layout.xml"
     },
     {
         "merged": "C:\\Users\\aman2\\AndroidStudioProjects\\MObiGPK1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_me22.xml.flat",

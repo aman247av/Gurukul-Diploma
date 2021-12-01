@@ -2005,6 +2005,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id dialog_text
 id dimensions
 id direct
 id disableHome
@@ -2064,6 +2065,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id img
 id info
 id invisible
 id inward
@@ -2177,6 +2179,7 @@ id ratio
 id rectangles
 id recyclerView
 id relative
+id retry
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2464,6 +2467,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_layout
 layout ed2_mech
 layout ed_all
 layout eng_material1

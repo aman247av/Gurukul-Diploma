@@ -1,6 +1,9 @@
 package com.gap.mobigpk1;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,9 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -36,6 +41,7 @@ public class book extends Fragment {
     RecyclerView slide;
     AutoScroll autoScrollAdapter;
     LinearLayoutManager layoutManager;
+    private Dialog progressDialog;
 
     /**
      * Use this factory method to create a new instance of
@@ -68,6 +74,12 @@ public class book extends Fragment {
         }
     }
 
+    private boolean isConnected()
+    {
+        ConnectivityManager connectivityManager = (ConnectivityManager) Objects.requireNonNull(getActivity()).getSystemService(Context.CONNECTIVITY_SERVICE);
+        return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -75,7 +87,25 @@ public class book extends Fragment {
         View v=inflater.inflate(R.layout.fragment_book, container, false);
 
 
-
+        if(!isConnected())
+        {
+            progressDialog=new Dialog(getActivity());
+            progressDialog.setContentView(R.layout.dialog_layout);
+            progressDialog.setCancelable(false);
+            Button btn=progressDialog.findViewById(R.id.retry);
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(isConnected())
+                        progressDialog.dismiss();
+                    else
+                        Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_SHORT).show();
+                }
+            });
+            progressDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+            progressDialog.show();
+            //    Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_LONG).show();
+        }
 
         Button button1 = v.findViewById(R.id.btn1);
         button1.setOnClickListener(new View.OnClickListener() {

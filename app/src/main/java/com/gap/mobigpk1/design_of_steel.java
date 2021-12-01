@@ -21,7 +21,7 @@ public class design_of_steel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_design_of_steel);
-
+        
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
