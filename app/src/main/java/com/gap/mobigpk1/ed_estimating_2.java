@@ -21,7 +21,7 @@ public class ed_estimating_2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ed_estimating2);
-        setContentView(R.layout.activity_el11);
+
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override

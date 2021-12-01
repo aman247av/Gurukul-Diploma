@@ -22,7 +22,7 @@ public class concrete_tech extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_concrete_tech);
         Button button1 = findViewById(R.id.btn1);
-        setContentView(R.layout.activity_el11);
+
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override

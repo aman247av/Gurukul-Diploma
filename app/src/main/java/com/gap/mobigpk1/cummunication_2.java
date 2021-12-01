@@ -21,7 +21,7 @@ public class cummunication_2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cummunication2);
-        setContentView(R.layout.activity_el11);
+
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
