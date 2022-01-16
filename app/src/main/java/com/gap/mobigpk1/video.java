@@ -8,17 +8,23 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -50,11 +56,11 @@ public class video extends Fragment {
     Context context;
     ImageView nointernet;
     RecyclerView recyclerView;
-    FirebaseRecyclerAdapter<Category, CategoryViewHolder> adapter;
-    RecyclerView.LayoutManager manager;
+    VideoAdapter adapter;
     FirebaseDatabase database;
     DatabaseReference reference;
     private Dialog progressDialog;
+    SearchView search;
 
     public video() {
         // Required empty public constructor
@@ -98,6 +104,7 @@ public class video extends Fragment {
         // Inflate the layout for this fragment
         View v=inflater.inflate(R.layout.fragment_video, container, false);
         nointernet = v.findViewById(R.id.nointernt);
+        search=v.findViewById(R.id.searching);
 
 
 
@@ -141,61 +148,61 @@ public class video extends Fragment {
         database= FirebaseDatabase.getInstance();
         reference=database.getReference("Catagory");
 
-        manager=new LinearLayoutManager(getActivity());
         recyclerView=v.findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(manager);
+        GridLayoutManager layoutManager=new GridLayoutManager(getActivity(),2);
+        recyclerView.setLayoutManager(layoutManager);
+
 
         FirebaseRecyclerOptions<Category> options=new FirebaseRecyclerOptions.Builder<Category>()
                 .setQuery(reference,Category.class)
                 .build();
 
-        adapter=new FirebaseRecyclerAdapter<Category, CategoryViewHolder>(options) {
-            @Override
-            protected void onBindViewHolder(@NonNull CategoryViewHolder categoryViewHolder, int i, @NonNull Category category) {
-                categoryViewHolder.categoryName.setText(category.getCategoryName());
-                categoryViewHolder.relativeLayout.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent=new Intent(getActivity(),video_lectures.class);
-                        intent.putExtra("title",category.getCategoryId());
-                        startActivity(intent);
-                    }
-                });
-
-
-            }
-
-            @NonNull
-            @Override
-            public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View v1= LayoutInflater.from(getContext())
-                        .inflate(R.layout.video_btn_firebase,parent,false);
-                return new CategoryViewHolder(v1);
-            }
-
-
-        };
-        adapter.startListening();
-        adapter.notifyDataSetChanged();
+        adapter=new VideoAdapter(options);
         recyclerView.setAdapter(adapter);
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                txtSearch(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                txtSearch(newText);
+                return false;
+            }
+        });
+
 
         return v;
     }
-    public class CategoryViewHolder extends RecyclerView.ViewHolder {
-        public TextView categoryName;
-        public RecyclerView category_recyclerView;
-        public RecyclerView.LayoutManager manager;
-        private Context context;
-        RelativeLayout relativeLayout;
 
-        public CategoryViewHolder(@NonNull View itemView) {
-            super(itemView);
-            relativeLayout=itemView.findViewById(R.id.relative);
-            manager=new LinearLayoutManager(itemView.getContext(),LinearLayoutManager.HORIZONTAL,false);
-            categoryName=itemView.findViewById(R.id.category_name);
-            category_recyclerView=itemView.findViewById(R.id.recyclerView);
-            category_recyclerView.setLayoutManager(manager);
-        }
+    private void txtSearch(String str) {
+
+        FirebaseRecyclerOptions<Category> options = new FirebaseRecyclerOptions.Builder<Category>()
+                .setQuery(reference.orderByChild("categoryName").startAt(str).endAt(str + "~"), Category.class)
+                .build();
+
+        adapter = new VideoAdapter(options);
+        adapter.startListening();
+        recyclerView.setAdapter(adapter);
 
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        adapter.stopListening();
+    }
+
+
+
+
 }

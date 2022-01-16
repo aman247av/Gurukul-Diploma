@@ -2,16 +2,8 @@ package com.gap.mobigpk1;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,20 +11,21 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.gap.mobigpk1.Model.Category;
 import com.gap.mobigpk1.Model.Note;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.Locale;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,14 +42,13 @@ public class notes extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    Context context;
     ImageView nointernet;
     RecyclerView recyclerView;
-    FirebaseRecyclerAdapter<Note, NoteViewHolder> adapter;
-    RecyclerView.LayoutManager manager;
+    NoteAdapter noteAdapter;
     FirebaseDatabase database;
     DatabaseReference reference;
     Dialog progressDialog;
+    SearchView search;
 
     public notes() {
         // Required empty public constructor
@@ -100,6 +92,7 @@ public class notes extends Fragment {
         // Inflate the layout for this fragment
         View v=inflater.inflate(R.layout.fragment_notes, container, false);
         nointernet = v.findViewById(R.id.nointernt);
+        search=v.findViewById(R.id.searching);
 
 
         if(!isConnected())
@@ -127,8 +120,6 @@ public class notes extends Fragment {
         new CountDownTimer(duration, 1000) {
             @Override
             public void onTick(long l) {
-                String sDuration=String.format(Locale.ENGLISH,"%02d"
-                        , TimeUnit.MILLISECONDS.toSeconds(l));
                 //Toast.makeText(getActivity(),"Please wait! Connecting to Internet",Toast.LENGTH_LONG).show();
             }
 
@@ -142,61 +133,54 @@ public class notes extends Fragment {
         database= FirebaseDatabase.getInstance();
         reference=database.getReference("Note");
 
-        manager=new LinearLayoutManager(getActivity());
         recyclerView=v.findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(manager);
+        GridLayoutManager layoutManager=new GridLayoutManager(getActivity(),2);
+        recyclerView.setLayoutManager(layoutManager);
 
         FirebaseRecyclerOptions<Note> options=new FirebaseRecyclerOptions.Builder<Note>()
                 .setQuery(reference,Note.class)
                 .build();
 
-        adapter=new FirebaseRecyclerAdapter<Note, NoteViewHolder>(options) {
+        noteAdapter=new NoteAdapter(options);
+        recyclerView.setAdapter(noteAdapter);
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            protected void onBindViewHolder(@NonNull NoteViewHolder noteViewHolder, int i, @NonNull Note note) {
-                noteViewHolder.categoryName.setText(note.getTitle());
-                noteViewHolder.relativeLayout.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(note.getLink()));
-                   //     startActivity(intent);
-                     //   Intent intent=new Intent(getActivity(),video_lectures.class);
-                       // intent.putExtra("title",note.getLink());
-                        startActivity(intent);
-                    }
-                });
+            public boolean onQueryTextSubmit(String query) {
+                txtSearch(query);
+                return false;
             }
 
-            @NonNull
             @Override
-            public NoteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View v1= LayoutInflater.from(getContext())
-                        .inflate(R.layout.notes_btn_firebase,parent,false);
-                return new NoteViewHolder(v1);
+            public boolean onQueryTextChange(String newText) {
+                txtSearch(newText);
+                return false;
             }
+        });
 
-
-        };
-        adapter.startListening();
-        adapter.notifyDataSetChanged();
-        recyclerView.setAdapter(adapter);
 
         return v;
     }
-    public class NoteViewHolder extends RecyclerView.ViewHolder {
-        public TextView categoryName;
-        public RecyclerView category_recyclerView;
-        public RecyclerView.LayoutManager manager;
-        private Context context;
-        RelativeLayout relativeLayout;
 
-        public NoteViewHolder(@NonNull View itemView) {
-            super(itemView);
-            relativeLayout=itemView.findViewById(R.id.relative);
-            manager=new LinearLayoutManager(itemView.getContext(),LinearLayoutManager.HORIZONTAL,false);
-            categoryName=itemView.findViewById(R.id.category_name);
-            category_recyclerView=itemView.findViewById(R.id.recyclerView);
-            category_recyclerView.setLayoutManager(manager);
-        }
+    private void txtSearch(String str) {
 
+        FirebaseRecyclerOptions<Note> options = new FirebaseRecyclerOptions.Builder<Note>()
+                .setQuery(reference.orderByChild("title").startAt(str).endAt(str + "~"), Note.class)
+                .build();
+
+        noteAdapter = new NoteAdapter(options);
+        noteAdapter.startListening();
+        recyclerView.setAdapter(noteAdapter);
+
+    } @Override
+    public void onStart() {
+        super.onStart();
+        noteAdapter.startListening();
     }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        noteAdapter.stopListening();
+    }
+
 }
