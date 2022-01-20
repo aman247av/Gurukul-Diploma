@@ -38,6 +38,9 @@ import com.google.android.play.core.install.model.AppUpdateType;
 import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.OnSuccessListener;
 import com.google.android.play.core.tasks.Task;
+import com.yodo1.mas.Yodo1Mas;
+import com.yodo1.mas.error.Yodo1MasError;
+import com.yodo1.mas.helper.model.Yodo1MasAdBuildConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,6 +96,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Yodo1MasAdBuildConfig config = new Yodo1MasAdBuildConfig.Builder().enableUserPrivacyDialog(true).build();
+        Yodo1Mas.getInstance().setAdBuildConfig(config);
+
+        Yodo1Mas.getInstance().init(this, "Your Appkey", new Yodo1Mas.InitListener() {
+            @Override
+            public void onMasInitSuccessful() {
+            }
+
+            @Override
+            public void onMasInitFailed(@NonNull Yodo1MasError error) {
+            }
+        });
 
         if(!isConnected())
         {

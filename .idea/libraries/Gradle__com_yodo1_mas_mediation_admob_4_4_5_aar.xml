@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yodo1.mas.mediation:admob:4.4.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0a4eb4943617177d6034872d3fa5381d/transformed/jetified-admob-4.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a4eb4943617177d6034872d3fa5381d/transformed/jetified-admob-4.4.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0a4eb4943617177d6034872d3fa5381d/transformed/jetified-admob-4.4.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yodo1.mas.mediation/admob/4.4.5/5ae25a52fb97f0d02a7a090aba19bf8303aa7409/admob-4.4.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

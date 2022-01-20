@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yodo1.mas.mediation:pangle:4.4.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c278cca7b227bcc60d70e3b83e3ff5cb/transformed/jetified-pangle-4.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c278cca7b227bcc60d70e3b83e3ff5cb/transformed/jetified-pangle-4.4.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c278cca7b227bcc60d70e3b83e3ff5cb/transformed/jetified-pangle-4.4.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yodo1.mas.mediation/pangle/4.4.5/cd2e5dbc482e5aa84ee97422fa2746951b24ab13/pangle-4.4.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

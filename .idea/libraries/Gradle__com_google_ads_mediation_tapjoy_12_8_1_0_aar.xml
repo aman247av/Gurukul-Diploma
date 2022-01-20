@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.ads.mediation:tapjoy:12.8.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/669a6bd85bbf5c565e78c15b2f1ab0c4/transformed/jetified-tapjoy-12.8.1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/669a6bd85bbf5c565e78c15b2f1ab0c4/transformed/jetified-tapjoy-12.8.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/669a6bd85bbf5c565e78c15b2f1ab0c4/transformed/jetified-tapjoy-12.8.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/669a6bd85bbf5c565e78c15b2f1ab0c4/transformed/jetified-tapjoy-12.8.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.ads.mediation/tapjoy/12.8.1.0/23bee18d0dcb70e10702b1d686583c5ff6462e90/tapjoy-12.8.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

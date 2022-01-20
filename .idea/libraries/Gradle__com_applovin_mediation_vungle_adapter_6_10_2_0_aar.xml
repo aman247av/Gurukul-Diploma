@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.applovin.mediation:vungle-adapter:6.10.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e2e2d7193f5c1121c87e706ce4c5d9b9/transformed/jetified-vungle-adapter-6.10.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e2e2d7193f5c1121c87e706ce4c5d9b9/transformed/jetified-vungle-adapter-6.10.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e2e2d7193f5c1121c87e706ce4c5d9b9/transformed/jetified-vungle-adapter-6.10.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.applovin.mediation/vungle-adapter/6.10.2.0/ece27d283b3298c05d5b614d71229b561eaae5f/vungle-adapter-6.10.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

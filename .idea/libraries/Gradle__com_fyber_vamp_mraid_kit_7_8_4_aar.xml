@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fyber.vamp:mraid-kit:7.8.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/80403d350a82f0d6132560056f27367e/transformed/jetified-mraid-kit-7.8.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/80403d350a82f0d6132560056f27367e/transformed/jetified-mraid-kit-7.8.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/80403d350a82f0d6132560056f27367e/transformed/jetified-mraid-kit-7.8.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fyber.vamp/mraid-kit/7.8.4/47d6ab12d022c0a6a2eabe455b66c2a37f684494/mraid-kit-7.8.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fyber.vamp/mraid-kit/7.8.4/fb488953f7304dbeea5a1f53fcbc7ed5ec5aad53/mraid-kit-7.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

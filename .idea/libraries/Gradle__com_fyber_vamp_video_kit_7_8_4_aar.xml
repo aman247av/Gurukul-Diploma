@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fyber.vamp:video-kit:7.8.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8f1219dd65feb0fba79d5e59eedb96df/transformed/jetified-video-kit-7.8.4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8f1219dd65feb0fba79d5e59eedb96df/transformed/jetified-video-kit-7.8.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8f1219dd65feb0fba79d5e59eedb96df/transformed/jetified-video-kit-7.8.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8f1219dd65feb0fba79d5e59eedb96df/transformed/jetified-video-kit-7.8.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fyber.vamp/video-kit/7.8.4/e3e1b3ac5ec696c537f653d6f646edf68ba18c9f/video-kit-7.8.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fyber.vamp/video-kit/7.8.4/7884fffaf4d0e6ea1e9b9402d2fb443f25e9f2ae/video-kit-7.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

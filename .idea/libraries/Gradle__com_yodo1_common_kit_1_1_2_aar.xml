@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yodo1.common:kit:1.1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/96674366c8f9c597353a88187fcda271/transformed/jetified-kit-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/96674366c8f9c597353a88187fcda271/transformed/jetified-kit-1.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/96674366c8f9c597353a88187fcda271/transformed/jetified-kit-1.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yodo1.common/kit/1.1.2/f4c14c5c8cc9f3638575f7f4f8479318a7d31673/kit-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ironsource.adapters:adcolonyadapter:4.3.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aeaaeed9238af978558c1de734c03a35/transformed/jetified-adcolonyadapter-4.3.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aeaaeed9238af978558c1de734c03a35/transformed/jetified-adcolonyadapter-4.3.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aeaaeed9238af978558c1de734c03a35/transformed/jetified-adcolonyadapter-4.3.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

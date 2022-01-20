@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.ads.mediation:facebook:6.7.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8df135c5cad7560fba6d5a35298de27b/transformed/jetified-facebook-6.7.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8df135c5cad7560fba6d5a35298de27b/transformed/jetified-facebook-6.7.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8df135c5cad7560fba6d5a35298de27b/transformed/jetified-facebook-6.7.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8df135c5cad7560fba6d5a35298de27b/transformed/jetified-facebook-6.7.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.ads.mediation/facebook/6.7.0.0/d973b0c9712fa947f8a9f6c662c1182471c13804/facebook-6.7.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
