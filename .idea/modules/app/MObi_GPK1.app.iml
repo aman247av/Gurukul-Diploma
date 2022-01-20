@@ -4,7 +4,7 @@
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":app" />
-        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="3.6.3" />
         <option name="LAST_KNOWN_AGP_VERSION" value="3.6.3" />
       </configuration>
     </facet>
@@ -19,7 +19,7 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/google-services/debug;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug" />
         <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/androidTest/res;file://$MODULE_DIR$/../../../app/src/androidTestDebug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
@@ -36,6 +36,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/build/generated/res/google-services/debug" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/build" />
     </content>
@@ -55,43 +56,60 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.3.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.3.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.2.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.room:room-common:2.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout-solver:2.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.guava:listenablefuture:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.2.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-annotations:16.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:27.1-android" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.12.13" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.15.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.material:material:1.3.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.0.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas:full:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas:core:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.common:androidx:1.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.firebaseui:firebase-ui-database:5.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:inmobi:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.inmobi.monetization:inmobi-ads:9.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.recyclerview:recyclerview:1.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-storage:20.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database:20.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads:20.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-lite:20.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-base:20.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.ump:user-messaging-platform:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-identifier:17.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-appcheck-interop:16.0.0-beta02@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database-collection:18.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-base:17.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth-interop:19.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-common:20.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:admob:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads:20.4.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-tasks:17.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:18.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-measurement-base:18.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:mytarget:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.my.target:mytarget-sdk:5.14.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.my.tracker:mytracker-sdk:3.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-lite:20.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.ump:user-messaging-platform:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-identifier:17.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-base:20.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:18.0.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-measurement-base:18.0.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-basement:17.6.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.fragment:fragment:1.2.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat-resources:1.2.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.browser:browser:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.drawerlayout:drawerlayout:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.media:media:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-ui:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media:media:1.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
@@ -102,30 +120,106 @@
     <orderEntry type="library" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.customview:customview:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.activity:activity:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.activity:activity:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.browser:browser:1.3.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.work:work-runtime:2.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.room:room-runtime:2.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.core:core:1.3.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.firebaseui:firebase-ui-common:5.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-process:2.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-service:2.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-components:17.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.documentfile:documentfile:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.savedstate:savedstate:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar" level="project" />
-    <orderEntry type="library" name="Gradle: androidx.arch.core:core-runtime:2.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.savedstate:savedstate:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.71828@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:tapjoy:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.tapjoy:tapjoy-android-sdk:12.8.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.exifinterface:exifinterface:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.sqlite:sqlite-framework:2.0.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.sqlite:sqlite:2.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation-experimental:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.play:core:1.10.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-core:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-common:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.common:collection:1.1.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.common:sensor:1.0.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.common:online-config:1.0.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.common:noHttp:1.1.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.common:kit:1.1.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.multidex:multidex:2.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:google-adapter:20.4.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:admobadapter:4.3.19@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:applovin:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin:applovin-sdk:10.3.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:applovin:10.3.4.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:applovinadapter:4.3.24@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:fyber:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.fyber.vamp:core-sdk:7.8.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.fyber.vamp:video-kit:7.8.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.fyber.vamp:mraid-kit:7.8.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:fyber:7.8.4.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:fyber-adapter:7.8.4.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:fyberadapter:4.3.13@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:ironsource:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.sdk:mediationsdk:7.1.10.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:vungle:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.vungle:publisher-sdk-android:6.10.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:ironsource:7.1.10.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:ironsource-adapter:7.1.10.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:yandex:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yandex.android:mobileads:4.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yandex.android:mobmetricalib:3.20.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.installreferrer:installreferrer:2.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:yandex-adapter:4.3.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:adcolony:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.adcolony:sdk:4.6.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:adcolony:4.6.3.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:adcolony-adapter:4.6.3.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:adcolonyadapter:4.3.7@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:facebook:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.facebook.android:audience-network-sdk:6.7.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:facebook:6.7.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:facebook-adapter:6.7.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:facebookadapter:4.3.25@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:inmobi:9.2.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:inmobi-adapter:9.9.9.8@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:inmobiadapter:4.3.9@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-dash:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-hls:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-smoothstreaming:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.android.exoplayer:exoplayer-transformer:2.13.3@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:mytarget:5.14.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:mytarget-adapter:5.14.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:pangle:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.pangle.global:ads-sdk:3.9.0.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:bytedance-adapter:3.9.0.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:pangleadapter:4.3.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:tapjoy:12.8.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:tapjoy-adapter:12.8.1.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:tapjoyadapter:4.1.16@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:unityads:4.4.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.unity3d.ads:unity-ads:3.7.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:unity:3.7.5.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:unityads-adapter:3.7.5.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:unityadsadapter:4.3.10@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.ads.mediation:vungle:6.10.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.applovin.mediation:vungle-adapter:6.10.2.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.ironsource.adapters:vungleadapter:4.3.8@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.yodo1.mas.mediation:yodo1:4.4.5@aar" level="project" />
   </component>
 </module>
