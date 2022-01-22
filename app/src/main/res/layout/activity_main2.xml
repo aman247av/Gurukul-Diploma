@@ -90,16 +90,17 @@
 
         </LinearLayout>
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+
+    <com.yodo1.mas.banner.Yodo1MasBannerAdView
+        xmlns:masads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/yodo1_mas_banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:layout_gravity="center_horizontal"
-        app:adSize="BANNER"
-        app:adUnitId="@string/ad_unit_id"
+        masads:adSize="Banner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 </LinearLayout>

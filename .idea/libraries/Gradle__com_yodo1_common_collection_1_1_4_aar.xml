@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.yodo1.common:collection:1.1.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/aec75ff6960beec80d9f5f27d6b6c75d/transformed/jetified-collection-1.1.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aec75ff6960beec80d9f5f27d6b6c75d/transformed/jetified-collection-1.1.4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aec75ff6960beec80d9f5f27d6b6c75d/transformed/jetified-collection-1.1.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb90aafd3c94875ed03fbe09f5aa9415/transformed/jetified-collection-1.1.4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cb90aafd3c94875ed03fbe09f5aa9415/transformed/jetified-collection-1.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb90aafd3c94875ed03fbe09f5aa9415/transformed/jetified-collection-1.1.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,12 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.ads.mediation:inmobi:9.2.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/85f4ee645a0ba7ea4ef9ce353d5f85b4/transformed/jetified-inmobi-9.2.1.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e4e76438a58a09b5dcb3baa02e4ab65b/transformed/jetified-inmobi-9.2.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/85f4ee645a0ba7ea4ef9ce353d5f85b4/transformed/jetified-inmobi-9.2.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/85f4ee645a0ba7ea4ef9ce353d5f85b4/transformed/jetified-inmobi-9.2.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/85f4ee645a0ba7ea4ef9ce353d5f85b4/transformed/jetified-inmobi-9.2.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e4e76438a58a09b5dcb3baa02e4ab65b/transformed/jetified-inmobi-9.2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e4e76438a58a09b5dcb3baa02e4ab65b/transformed/jetified-inmobi-9.2.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e4e76438a58a09b5dcb3baa02e4ab65b/transformed/jetified-inmobi-9.2.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

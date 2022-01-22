@@ -1,5 +1,6 @@
 package com.gap.mobigpk1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,31 +14,42 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.yodo1.mas.Yodo1Mas;
+import com.yodo1.mas.error.Yodo1MasError;
+import com.yodo1.mas.event.Yodo1MasAdEvent;
 
 public class me11 extends AppCompatActivity {
-    private AdView mAdView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me11);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         Button button1 = findViewById(R.id.btn1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(me11.this,Math1aActivity.class);
-                startActivity(intent);
+                Yodo1Mas.getInstance().showInterstitialAd(me11.this);
+                Yodo1Mas.getInstance().setInterstitialListener(new Yodo1Mas.InterstitialListener() {
+                    @Override
+                    public void onAdOpened(@NonNull Yodo1MasAdEvent event) {
+                    }
+
+                    @Override
+                    public void onAdError(@NonNull Yodo1MasAdEvent event, @NonNull Yodo1MasError error) {
+
+                    }
+
+                    @Override
+                    public void onAdClosed(@NonNull Yodo1MasAdEvent event) {
+                        Intent intent=new Intent(me11.this,Math1aActivity.class);
+                        startActivity(intent);
+                    }
+                });
+
             }
         });
         Button button2 = findViewById(R.id.btn2);

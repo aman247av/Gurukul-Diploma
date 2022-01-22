@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.applovin.mediation:tapjoy-adapter:12.8.1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e7a35db6a136c169121fd8b306ee9bbf/transformed/jetified-tapjoy-adapter-12.8.1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e7a35db6a136c169121fd8b306ee9bbf/transformed/jetified-tapjoy-adapter-12.8.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e7a35db6a136c169121fd8b306ee9bbf/transformed/jetified-tapjoy-adapter-12.8.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/17f49e9d319df7bcd5c0c40711a6bb79/transformed/jetified-tapjoy-adapter-12.8.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/17f49e9d319df7bcd5c0c40711a6bb79/transformed/jetified-tapjoy-adapter-12.8.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/17f49e9d319df7bcd5c0c40711a6bb79/transformed/jetified-tapjoy-adapter-12.8.1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

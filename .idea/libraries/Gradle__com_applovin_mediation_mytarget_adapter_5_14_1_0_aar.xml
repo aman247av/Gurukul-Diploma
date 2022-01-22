@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.applovin.mediation:mytarget-adapter:5.14.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fb473e28e1545404d6b35372791445e3/transformed/jetified-mytarget-adapter-5.14.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb473e28e1545404d6b35372791445e3/transformed/jetified-mytarget-adapter-5.14.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb473e28e1545404d6b35372791445e3/transformed/jetified-mytarget-adapter-5.14.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/68b49d51b7aab6bc7fa4d7b6491d0ecd/transformed/jetified-mytarget-adapter-5.14.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/68b49d51b7aab6bc7fa4d7b6491d0ecd/transformed/jetified-mytarget-adapter-5.14.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/68b49d51b7aab6bc7fa4d7b6491d0ecd/transformed/jetified-mytarget-adapter-5.14.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

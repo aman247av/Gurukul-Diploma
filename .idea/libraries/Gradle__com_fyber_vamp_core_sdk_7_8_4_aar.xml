@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.fyber.vamp:core-sdk:7.8.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e03d44c01087e4341f349bda5f7155b3/transformed/jetified-core-sdk-7.8.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e03d44c01087e4341f349bda5f7155b3/transformed/jetified-core-sdk-7.8.4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e03d44c01087e4341f349bda5f7155b3/transformed/jetified-core-sdk-7.8.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c54b787ef47e227d05d22fcb4da3d5e0/transformed/jetified-core-sdk-7.8.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c54b787ef47e227d05d22fcb4da3d5e0/transformed/jetified-core-sdk-7.8.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c54b787ef47e227d05d22fcb4da3d5e0/transformed/jetified-core-sdk-7.8.4/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fyber.vamp/core-sdk/7.8.4/f9d8c16b8d9a297e203e3a70c115e504ac5589a6/core-sdk-7.8.4-javadoc.jar!/" />

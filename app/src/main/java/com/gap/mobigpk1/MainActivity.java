@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         Yodo1MasAdBuildConfig config = new Yodo1MasAdBuildConfig.Builder().enableUserPrivacyDialog(true).build();
         Yodo1Mas.getInstance().setAdBuildConfig(config);
 
-        Yodo1Mas.getInstance().init(this, "Your Appkey", new Yodo1Mas.InitListener() {
+        Yodo1Mas.getInstance().init(this, "fBKm8gUEIO", new Yodo1Mas.InitListener() {
             @Override
             public void onMasInitSuccessful() {
             }
