@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.ironsource.sdk:mediationsdk:7.1.10.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/527b4cd6571ddcf53b719e6366088a69/transformed/jetified-mediationsdk-7.1.10.1/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/527b4cd6571ddcf53b719e6366088a69/transformed/jetified-mediationsdk-7.1.10.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/527b4cd6571ddcf53b719e6366088a69/transformed/jetified-mediationsdk-7.1.10.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/527b4cd6571ddcf53b719e6366088a69/transformed/jetified-mediationsdk-7.1.10.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -9,6 +9,11 @@
         app:showAsAction="never"/>
 
     <item
+        android:id="@+id/change_lang"
+        android:title="Change Language"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/update"
         android:title="Check Update"
         app:showAsAction="never"/>

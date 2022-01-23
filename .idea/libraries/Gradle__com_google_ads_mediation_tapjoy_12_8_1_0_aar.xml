@@ -4,10 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f322e7812c9674d6e307c9669ba32f2f/transformed/jetified-tapjoy-12.8.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/669a6bd85bbf5c565e78c15b2f1ab0c4/transformed/jetified-tapjoy-12.8.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f322e7812c9674d6e307c9669ba32f2f/transformed/jetified-tapjoy-12.8.1.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f322e7812c9674d6e307c9669ba32f2f/transformed/jetified-tapjoy-12.8.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f322e7812c9674d6e307c9669ba32f2f/transformed/jetified-tapjoy-12.8.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f322e7812c9674d6e307c9669ba32f2f/transformed/jetified-tapjoy-12.8.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

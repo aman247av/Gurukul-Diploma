@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -20,13 +22,20 @@ import com.yodo1.mas.event.Yodo1MasAdEvent;
 
 public class me11 extends AppCompatActivity {
 
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me11);
+        sharedPreferences = getSharedPreferences("FIRSTRUN",MODE_PRIVATE);
 
 
+        if(check()){
+            Toast.makeText(getApplicationContext(), "E", Toast.LENGTH_SHORT).show();
+        }
+        else
+            Toast.makeText(getApplicationContext(), "H", Toast.LENGTH_SHORT).show();
 
         Button button1 = findViewById(R.id.btn1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -100,5 +109,11 @@ public class me11 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+
+    private boolean check(){
+        String value = sharedPreferences.getString("Language","H");
+        return !value.equals("H");
     }
 }

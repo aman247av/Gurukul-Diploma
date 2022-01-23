@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.yodo1.mas.mediation:vungle:4.4.5@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/89927c29f6ee4a97bc215b6583145fa2/transformed/jetified-vungle-4.4.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9550d04bca7a6378be46ddebb0a693b8/transformed/jetified-vungle-4.4.5/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9550d04bca7a6378be46ddebb0a693b8/transformed/jetified-vungle-4.4.5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9550d04bca7a6378be46ddebb0a693b8/transformed/jetified-vungle-4.4.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9550d04bca7a6378be46ddebb0a693b8/transformed/jetified-vungle-4.4.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

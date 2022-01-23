@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.applovin.mediation:fyber-adapter:7.8.4.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8bdbe8773d9e6b542770c673d62cc611/transformed/jetified-fyber-adapter-7.8.4.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/094099c648a95cb632e91ad1f1b43293/transformed/jetified-fyber-adapter-7.8.4.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/094099c648a95cb632e91ad1f1b43293/transformed/jetified-fyber-adapter-7.8.4.2/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/094099c648a95cb632e91ad1f1b43293/transformed/jetified-fyber-adapter-7.8.4.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/094099c648a95cb632e91ad1f1b43293/transformed/jetified-fyber-adapter-7.8.4.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/094099c648a95cb632e91ad1f1b43293/transformed/jetified-fyber-adapter-7.8.4.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

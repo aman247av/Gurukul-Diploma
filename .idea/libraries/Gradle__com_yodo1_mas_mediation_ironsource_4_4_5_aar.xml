@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.yodo1.mas.mediation:ironsource:4.4.5@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9c8220e102ab90e5d4775ae1c6e1062e/transformed/jetified-ironsource-4.4.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8e13f1bbcee0e46f58a59bb1986b408/transformed/jetified-ironsource-4.4.5/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e8e13f1bbcee0e46f58a59bb1986b408/transformed/jetified-ironsource-4.4.5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8e13f1bbcee0e46f58a59bb1986b408/transformed/jetified-ironsource-4.4.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8e13f1bbcee0e46f58a59bb1986b408/transformed/jetified-ironsource-4.4.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

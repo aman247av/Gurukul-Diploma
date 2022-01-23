@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.yodo1.mas.mediation:inmobi:4.4.5@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c041122eb73d1d1bf5126da61c0f5a06/transformed/jetified-inmobi-4.4.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d1412d4254a9a6156f14e39b2fe44709/transformed/jetified-inmobi-4.4.5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d1412d4254a9a6156f14e39b2fe44709/transformed/jetified-inmobi-4.4.5/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d1412d4254a9a6156f14e39b2fe44709/transformed/jetified-inmobi-4.4.5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d1412d4254a9a6156f14e39b2fe44709/transformed/jetified-inmobi-4.4.5/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

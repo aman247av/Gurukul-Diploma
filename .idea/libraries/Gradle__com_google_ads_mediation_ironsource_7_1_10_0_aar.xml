@@ -4,10 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0ad783c352e7938323deaad73a32ab35/transformed/jetified-ironsource-7.1.10.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5f590864b7b2d24df5d1154b8f41c0da/transformed/jetified-ironsource-7.1.10.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0ad783c352e7938323deaad73a32ab35/transformed/jetified-ironsource-7.1.10.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0ad783c352e7938323deaad73a32ab35/transformed/jetified-ironsource-7.1.10.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0ad783c352e7938323deaad73a32ab35/transformed/jetified-ironsource-7.1.10.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0ad783c352e7938323deaad73a32ab35/transformed/jetified-ironsource-7.1.10.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -2,8 +2,8 @@
   <library name="Gradle: com.ironsource.adapters:facebookadapter:4.3.25@aar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2c989169113a71577cb64b1250ed0909/transformed/jetified-facebookadapter-4.3.25/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c989169113a71577cb64b1250ed0909/transformed/jetified-facebookadapter-4.3.25/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c989169113a71577cb64b1250ed0909/transformed/jetified-facebookadapter-4.3.25/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c989169113a71577cb64b1250ed0909/transformed/jetified-facebookadapter-4.3.25/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

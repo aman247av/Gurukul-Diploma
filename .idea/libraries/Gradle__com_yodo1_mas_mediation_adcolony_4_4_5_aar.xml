@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.yodo1.mas.mediation:adcolony:4.4.5@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b7c8cedde903d0cc9fa4f18b2d3a6f0e/transformed/jetified-adcolony-4.4.5/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2c413a16ae7b30f80197591d83f792de/transformed/jetified-adcolony-4.4.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c413a16ae7b30f80197591d83f792de/transformed/jetified-adcolony-4.4.5/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c413a16ae7b30f80197591d83f792de/transformed/jetified-adcolony-4.4.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c413a16ae7b30f80197591d83f792de/transformed/jetified-adcolony-4.4.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

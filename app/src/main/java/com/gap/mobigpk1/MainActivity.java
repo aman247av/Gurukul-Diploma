@@ -1,17 +1,10 @@
 package com.gap.mobigpk1;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.LinearSnapHelper;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -22,14 +15,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
 import com.google.android.play.core.appupdate.AppUpdateManager;
@@ -42,63 +34,20 @@ import com.yodo1.mas.Yodo1Mas;
 import com.yodo1.mas.error.Yodo1MasError;
 import com.yodo1.mas.helper.model.Yodo1MasAdBuildConfig;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class MainActivity extends AppCompatActivity {
 
     Fragment fragment=new book();
     private  int REQUEST_CODE=11;
     public Dialog progressDialog;
-     Button btn;
+     Button btn,btn2;
+    SharedPreferences sharedPreferences,firsttime;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.hamburger,menu);
-        return true;
-    }
-    private boolean isConnected()
-    {
-        ConnectivityManager connectivityManager = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-        return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case  R.id.share:
-                Intent intent=new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                String Share="Download GURUKUL POLYTECHNIC Now :- https://play.google.com/store/apps/details?id=com.gap.mobigpk1&hl=en";
-                String  sub="GURUKUL POLYTECHNIC";
-                intent.putExtra(intent.EXTRA_SUBJECT,sub);
-                intent.putExtra(intent.EXTRA_TEXT,Share);
-                startActivity(Intent.createChooser(intent,"Share Using"));
-                return true;
-            case R.id.update:
-                final String app=BuildConfig.APPLICATION_ID;
-                try {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" +app)));
-                }
-                catch (android.content.ActivityNotFoundException anfe)
-                {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.gap.mobigpk1&hl=en")));
-                }
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Yodo1MasAdBuildConfig config = new Yodo1MasAdBuildConfig.Builder().enableUserPrivacyDialog(true).build();
-        Yodo1Mas.getInstance().setAdBuildConfig(config);
+        sharedPreferences = getSharedPreferences("FIRSTRUN", MODE_PRIVATE);
+        firsttime = getSharedPreferences("firsttime", MODE_PRIVATE);
 
         Yodo1Mas.getInstance().init(this, "fBKm8gUEIO", new Yodo1Mas.InitListener() {
             @Override
@@ -127,35 +76,40 @@ public class MainActivity extends AppCompatActivity {
             });
             progressDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
             progressDialog.show();
-        //    Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_LONG).show();
         }
 
+        if(first()){
+            SharedPreferences.Editor edit = firsttime.edit();
+            edit.putBoolean("firstrun", false);
+            edit.commit();
+            language();
+        }
 
         AppUpdateManager appUpdateManager= AppUpdateManagerFactory.create(MainActivity.this);
         Task<AppUpdateInfo> appUpdateInfoTask= appUpdateManager.getAppUpdateInfo();
         appUpdateInfoTask.addOnSuccessListener(new OnSuccessListener<AppUpdateInfo>() {
             @Override
             public void onSuccess(AppUpdateInfo result) {
-             if(result.updateAvailability()== UpdateAvailability.UPDATE_AVAILABLE
-             && result.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE))
-                try {
-                    appUpdateManager.startUpdateFlowForResult(result,AppUpdateType.IMMEDIATE,MainActivity.this,REQUEST_CODE);
-                } catch (IntentSender.SendIntentException e) {
-                    e.printStackTrace();
-                }
+                if(result.updateAvailability()== UpdateAvailability.UPDATE_AVAILABLE
+                        && result.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE))
+                    try {
+                        appUpdateManager.startUpdateFlowForResult(result,AppUpdateType.IMMEDIATE,MainActivity.this,REQUEST_CODE);
+                    } catch (IntentSender.SendIntentException e) {
+                        e.printStackTrace();
+                    }
             }
         });
 
 
         getSupportFragmentManager().beginTransaction().replace(R.id.frame,fragment).commit();
-       BottomNavigationView btnNav=findViewById(R.id.btn_nav);
+        BottomNavigationView btnNav=findViewById(R.id.btn_nav);
 
         btnNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()) {
                     case R.id.book:
-                        fragment=new book();
+                        fragment = new book();
                         break;
                     case R.id.video:
                         fragment=new video();
@@ -164,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                         fragment=new notes();
                         break;
                 }
-               getSupportFragmentManager().beginTransaction().replace(R.id.frame,fragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame,fragment).commit();
                 return true;
             }
 
@@ -173,6 +127,43 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.hamburger,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case  R.id.share:
+                Intent intent=new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                String Share="Download GURUKUL POLYTECHNIC Now :- https://play.google.com/store/apps/details?id=com.gap.mobigpk1&hl=en";
+                String  sub="GURUKUL POLYTECHNIC";
+                intent.putExtra(intent.EXTRA_SUBJECT,sub);
+                intent.putExtra(intent.EXTRA_TEXT,Share);
+                startActivity(Intent.createChooser(intent,"Share Using"));
+                return true;
+
+            case R.id.change_lang:
+                language();
+                break;
+
+            case R.id.update:
+                final String app=BuildConfig.APPLICATION_ID;
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" +app)));
+                }
+                catch (android.content.ActivityNotFoundException anfe)
+                {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.gap.mobigpk1&hl=en")));
+                }
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -183,6 +174,61 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("num","Update Flow failed"+resultCode);
             }
         }
+    }
+
+    private boolean language(){
+        progressDialog=new Dialog(MainActivity.this);
+        progressDialog.setContentView(R.layout.language);
+        progressDialog.setCancelable(false);
+        btn=progressDialog.findViewById(R.id.hindi);
+        btn2=progressDialog.findViewById(R.id.english);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(check()){
+                    SharedPreferences.Editor myEdit = sharedPreferences.edit();
+                    myEdit.putString("Language", "H");
+                    myEdit.commit();
+                    Toast.makeText(MainActivity.this,"Hindi saved",Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                }
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(check()){
+                    SharedPreferences.Editor myEdit = sharedPreferences.edit();
+                    myEdit.putString("Language", "E");
+                    myEdit.commit();
+                    Toast.makeText(MainActivity.this,"English saved",Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                }
+
+            }
+        });
+
+        progressDialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        progressDialog.show();
+        return  true;
+    }
+
+    private boolean isConnected()
+    {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
+
+    private boolean check(){
+        String value = sharedPreferences.getString("Language","H");
+        return value!=null;
+    }
+
+    private boolean first(){
+        boolean value = firsttime.getBoolean("firstrun", true);
+        return value;
     }
 }
 

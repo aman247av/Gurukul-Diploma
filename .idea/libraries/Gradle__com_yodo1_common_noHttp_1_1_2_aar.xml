@@ -1,9 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.yodo1.common:noHttp:1.1.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/76fa7b6c6be2eebc55d67bc847df3a48/transformed/jetified-noHttp-1.1.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c59a6cd30bd5c9c5cb69a8d8ca7a1321/transformed/jetified-noHttp-1.1.2/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c59a6cd30bd5c9c5cb69a8d8ca7a1321/transformed/jetified-noHttp-1.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c59a6cd30bd5c9c5cb69a8d8ca7a1321/transformed/jetified-noHttp-1.1.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c59a6cd30bd5c9c5cb69a8d8ca7a1321/transformed/jetified-noHttp-1.1.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />

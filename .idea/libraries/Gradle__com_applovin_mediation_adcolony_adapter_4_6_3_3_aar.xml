@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.applovin.mediation:adcolony-adapter:4.6.3.3@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/19c0cc00d96642c57a9ec418eeecb3a0/transformed/jetified-adcolony-adapter-4.6.3.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f0831b224fcf64e3c342372a07035a8f/transformed/jetified-adcolony-adapter-4.6.3.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0831b224fcf64e3c342372a07035a8f/transformed/jetified-adcolony-adapter-4.6.3.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0831b224fcf64e3c342372a07035a8f/transformed/jetified-adcolony-adapter-4.6.3.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f0831b224fcf64e3c342372a07035a8f/transformed/jetified-adcolony-adapter-4.6.3.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

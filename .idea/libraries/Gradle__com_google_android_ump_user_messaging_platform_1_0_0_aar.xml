@@ -1,9 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.ump:user-messaging-platform:1.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/00ab091abd9b1b7f79a5f0837d052c53/transformed/jetified-user-messaging-platform-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3fa96d8f833762c40e83bf5986f09830/transformed/jetified-user-messaging-platform-1.0.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3fa96d8f833762c40e83bf5986f09830/transformed/jetified-user-messaging-platform-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3fa96d8f833762c40e83bf5986f09830/transformed/jetified-user-messaging-platform-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3fa96d8f833762c40e83bf5986f09830/transformed/jetified-user-messaging-platform-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

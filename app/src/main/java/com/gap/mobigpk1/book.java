@@ -5,20 +5,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.LinearSnapHelper;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -76,7 +75,7 @@ public class book extends Fragment {
 
     private boolean isConnected()
     {
-        ConnectivityManager connectivityManager = (ConnectivityManager) Objects.requireNonNull(getActivity()).getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager connectivityManager = (ConnectivityManager) requireActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
         return connectivityManager.getActiveNetworkInfo()!=null && connectivityManager.getActiveNetworkInfo().isConnectedOrConnecting();
     }
 
@@ -84,6 +83,11 @@ public class book extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+       // MainActivity mainActivity =
+        Bundle bundle = this.getArguments();
+        String strtext ="H";
+//        String strtext = bundle.getString("lang");
+//        String strtext = this.getArguments().getString("lang");
         View v=inflater.inflate(R.layout.fragment_book, container, false);
 
 
@@ -113,6 +117,7 @@ public class book extends Fragment {
             public void onClick(View view) {
                 Intent intent=new Intent(getActivity(),Main2Activity.class);
                 intent.putExtra("title","Mechanical Engg.");
+
                 startActivity(intent);
             }
         });
